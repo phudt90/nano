@@ -11,7 +11,21 @@
     background-color:#fff;
   }
   
+  &__main-left {
+    position:relative;
+  }
+  
+  &__main-right {
+    @include breakpoint(max-width bp(sm)) {
+      padding: 10px 10px;
+    }
+  }
+  
   &__navigation {
     @extend .bg-red;
+    
+    @include breakpoint(max-width bp(sm)) {
+      display:none;
+    }
   }
 }

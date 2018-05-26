@@ -1,22 +1,14 @@
 .header-logo {
-  display:inline-block;
-  max-width:180px;
-  margin-top: 10px;
-  margin-bottom:10px;
-  
-  @include breakpoint(max-width bp(md)) {
-    display: block;
-    max-width:100px;
-  }
+  display:block;
   
   @include breakpoint(max-width bp(sm)) {
-    display: block;
-    margin-left: 10px;
-    margin-right:10px;
-    max-width:80px;
+    text-align:center;
   }
   
   .logo {
-    display:block;
+    display:inline-block;
+    max-width:180px;
+    margin-top: 10px;
+    margin-bottom:10px;
   }
 }

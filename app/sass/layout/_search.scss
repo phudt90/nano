@@ -2,58 +2,6 @@
   
   @include breakpoint(max-width bp(md)) {
     width:auto;
-    float:none;
-    margin-top: 5px;
-        
-    .navbar-offcanvas {
-      background:#ffffff;
-      padding:0;
-    }
-  }
-
-  .search-toggler {
-    display:none;
-    width: auto;
-    height: 40px;
-    border: 2px solid #fff;
-    padding: 9px 10px;
-    border-radius: 4px;
-    letter-spacing: .7px;
-    @extend %font-size-xs;
-    @extend %font-weight-medium;
-    color: #fff;
-    
-    @include breakpoint(max-width bp(md)) {
-      display:block;
-    }
-    
-    .search-toggler-icon {
-      display:inline-block;
-      vertical-align: middle;
-      width: 16px;
-      height: 16px;
-      background: url(../img/icons/search.png) no-repeat 50% 50%;
-      background-color: transparent;
-    }
-    .search-toggler-text {
-      display:inline-block;
-      vertical-align: middle;
-    }
-    
-    &:hover {
-      background-color: #263349;
-    }
-    &.opened {
-      background: url(../img/icons/close.png) no-repeat center center;
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 17;
-    }
-    &.opened + .header-search {
-      display:block;
-    }
   }
 
   .form-search-wrapper {
@@ -75,11 +23,6 @@
       &__input {
         width:100%;
         
-        @include breakpoint(max-width bp(md)) {
-          background: #ff3100;
-          padding: 8px;
-        }
-        
         input[type=text] {
           border-radius: 0;
           border: 0;
@@ -96,10 +39,6 @@
           @include breakpoint(max-width bp(md)) {
             display:block;
             width:100%;
-            color: #444;
-            background: #ffffff;
-            border-radius:3px;
-            border:0;
           }
         }
       }
@@ -118,7 +57,6 @@
           border-bottom-right-radius: 3px;
           
           @include breakpoint(max-width bp(md)) {
-            display:none;
             
             > span {
               display:none;

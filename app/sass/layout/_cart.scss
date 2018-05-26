@@ -1,5 +1,10 @@
 .cart {
-  display:inline-block;
+  float:right;
+  
+  @include breakpoint(max-width bp(xs)) {
+    float:none;
+    width:100%;
+  }
   
   &__inner{
     position:relative;
@@ -38,6 +43,10 @@
     }
     &__text{
       color:inherit!important;
+      
+      @include breakpoint(max-width bp(xs)) {
+        display:none!important;
+      }
     }
     &__count{
       padding: 0 6px;
