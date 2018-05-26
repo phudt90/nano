@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=vietnamese');
+
+%font-weight-light {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+%font-weight-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+%font-weight-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+%font-weight-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+/* 32px super large */
+%font-size-sl {
+  font-size: 2rem;
+}
+
+/* 28px extra extra large */
+%font-size-xxl {
+  font-size: 1.75rem;
+}
+
+/* 24px extra large */
+%font-size-xl {
+  font-size: 1.5rem;
+}
+
+/* 18px - large */
+%font-size-lg {
+  font-size: 1.125rem;
+}
+
+/* 16px medium large */
+%font-size-ml {
+  font-size: 1rem;
+}
+
+/* 15px medium */
+%font-size-md {
+  font-size: .9375rem;
+}
+
+/* 14px small */
+%font-size-sm {
+  font-size: .875rem;
+}
+
+/* 13px extra small */
+%font-size-xs {
+  font-size: .8125rem;
+}
+
+/* 12px extra extra small */
+%font-size-xxs {
+  font-size: .75rem;
+}

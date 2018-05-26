@@ -1,0 +1,56 @@
+.cart {
+  display:inline-block;
+  
+  &__inner{
+    position:relative;
+  }
+  
+  &__toggle {
+    display:block;
+    height:40px;
+    position:relative;
+    border: 2px solid #e5e5e5;
+    padding: 9px 11px 9px 40px;
+    color: #444444;
+    letter-spacing: .7px;
+    @extend %font-size-xs;
+    @extend %font-weight-medium;
+    @include border-radius(4px);
+    vertical-align: middle;
+    
+    &:hover {
+      color:inherit!important;
+      @extend .border-red;
+    }
+    span {
+      display:inline-block;
+      vertical-align:top;
+    }
+    &__icon{
+      position:absolute;
+      top:7px;
+      left:10px;
+      width:23px;
+      height:22px;
+      background-image: url('../img/icons/cart.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    &__text{
+      color:inherit!important;
+    }
+    &__count{
+      padding: 0 6px;
+      margin-left:4px;
+      @extend .bg-red;
+      @extend %font-weight-medium;
+      @include border-radius(3px);
+    }
+  }
+  
+  &__dropdown {
+    position:absolute;
+    display:none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}

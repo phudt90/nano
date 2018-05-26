@@ -1,0 +1,17 @@
+.site-header {
+  position:relative;
+  
+  @include breakpoint(max-width bp(sm)) {
+    .container {
+      padding:0;
+    }
+  }
+  
+  &__main {
+    background-color:#fff;
+  }
+  
+  &__navigation {
+    @extend .bg-red;
+  }
+}

@@ -1,0 +1,218 @@
+.nav-categories{
+  display: inline-block;
+  position: relative;
+  width:100%;
+  height:100%;
+  
+  @include breakpoint(max-width bp(md)) {
+    width: auto;
+    padding-left:15px;
+    margin:0;
+    
+    .navbar-offcanvas {
+      background:#ffffff;
+      padding:0;
+    }
+  }
+  
+  &__toggle {
+    display: block;
+    padding: 7px 17px 7px 56px!important;
+    font-weight: 500;
+    font-size: $font-size-text-small;
+    letter-spacing: .6px;
+    color: #fff;
+    line-height: 27px;
+    position: relative;
+    width:100%;
+    height:38px;
+    @extend .bg-red-thunderbird;
+    
+    &.offcanvas-toggle {
+      display:none;
+    }
+    
+    @include breakpoint(max-width bp(md)) {
+      display:none;
+      
+      &.offcanvas-toggle {
+        display:block;
+      }
+    }
+    
+    &:hover {
+      color:inherit!important;
+    }
+    &__icon {
+      position: absolute;
+      height: 2px;
+      width: 18px;
+      left: 18px;
+      top: 20px;
+      background-color: #fff;
+      display: inline-block;
+      
+      &:before{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 24px;
+        left:0;
+        top: -7px;
+        background-color: #fff;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 24px;
+        left:0;
+        top: 7px;
+        background-color: #fff;
+      }
+    }
+    &__text {
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+  }
+  &:hover {
+    ul.cmm {
+      display: block;
+    }
+  }
+
+  .cmm {
+    display:none;
+    list-style: none;
+    background: #ffffff;
+    width:100%;
+    margin: 0;
+    padding:0;
+    position: absolute;
+    top: 37px;
+    z-index:11;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 4px 24px 0 rgba(0,0,0,.36);
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,.36);
+
+    @include breakpoint(max-width bp(md)) {
+      position: relative;
+      top: 0;
+      left: 0;
+      text-align:left;
+      width: 100%;
+      height: 100%;
+      padding-top:10px;
+      display:block;
+    }
+    
+    &__item--has-children {
+      > a:after {
+        float: right;
+        @include fa-icon;
+        @extend .fa-angle-right:before;
+        font-size: 16px;
+        line-height: 30px;
+        
+        @include breakpoint(max-width bp(md)) {
+          display:none;
+        }
+      }
+      
+      &:hover {
+        .cmm__submenu {
+          display:block;
+        }
+      }
+    }
+    
+    &__nav-link {
+      display:block;
+      position: relative;
+      @extend %font-size-xs;
+      @extend %font-weight-light;
+      color: $text-color;
+      height: 34px;
+      line-height: 34px;
+      padding: 0 10px 0 44px;
+      transition: none!important;
+      
+      &:hover {
+        background-color: #f3f4f8;
+        
+        > i.fa {
+          color:inherit;
+        }
+      }
+      
+      i.fa {
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: #acbac6;
+      }
+    }
+    
+    &__submenu {
+      display:none;
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: 100%;
+      width:870px;
+      height:554px;
+      background: #ffffff;
+      border-radius: 0 3px 3px 0;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ddd #ddd #ddd #e1e1e1;
+      -webkit-box-shadow: -2px 0 8px 0 rgba(0,0,0,.06);
+      box-shadow: -2px 0 8px 0 rgba(0,0,0,.06);
+      z-index: 8;
+      
+      @include breakpoint(max-width bp(md)) {
+        position:static;
+        top:0;
+        left:0;
+        bottom:0;
+        width:100%;
+        height:auto;
+        border:0;
+        box-shadow:none;
+      }
+      
+      .cmm__submenu-wrapper {
+        padding:15px 25px;
+        background: #ffffff;
+        
+        @include breakpoint(max-width bp(md)) {
+          padding: 15px 15px;
+        }
+      }
+      
+      ul {
+        list-style-type:none;
+        margin:0 0 5px;
+        padding:0;
+        
+        > li {
+          @extend %font-size-xs;
+          @extend %font-weight-regular;
+          color: $text-color;
+          line-height:22px;
+          
+          > a, > span {
+            
+          }
+        }
+      }
+    }
+  }
+}
