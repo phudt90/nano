@@ -10,17 +10,12 @@
           <div class="site-header__main-left">
             <?php include 'header_logo.php'; ?>
             
-            <div id="main-nav-toggle" class="mmm-rw-top-menu-toggle mmm-toggle-wrapper">
-              <button type="button" class="mmm-toggle" aria-controls="" aria-pressed="false">
-                <i class="fa fa-lg fa-bars mmm-toggle__icon mmm-toggle__icon--open"></i>
-                <i class="fa fa-lg fa-times mmm-toggle__icon mmm-toggle__icon--close"></i>
-              </button>
-            </div>
+            <?php include 'header_nav_toggle.php'; ?>
           </div>
         </div>
         <div class="slds-col slds-size_12-of-12 slds-large-size_9-of-12">
           <div class="site-header__main-right">
-            <div class="slds-grid slds-gutters slds-grid_vertical-align-center">
+            <div class="slds-grid slds-gutters_xx-small slds-grid_vertical-align-center">
               <div class="slds-col slds-size_9-of-12">
                 <?php include 'header_search.php'; ?>
               </div>

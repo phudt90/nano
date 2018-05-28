@@ -23,6 +23,10 @@
     @include border-radius(4px);
     vertical-align: middle;
     
+    @include breakpoint(max-width bp(xs)) {
+      padding: 9px 11px;
+    }
+    
     &:hover {
       color:inherit!important;
       @extend .border-red;
@@ -54,6 +58,13 @@
       @extend .bg-red;
       @extend %font-weight-medium;
       @include border-radius(3px);
+      
+      @include breakpoint(max-width bp(xs)) {
+        position:absolute;
+        top:3px;
+        right:3px;
+        @include border-radius(50%);
+      }
     }
   }
   

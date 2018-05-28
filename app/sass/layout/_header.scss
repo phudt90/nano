@@ -1,9 +1,9 @@
 .site-header {
   position:relative;
   
-  @include breakpoint(max-width bp(sm)) {
+  @include breakpoint(max-width bp(md)) {
     .container {
-      padding:0;
+      
     }
   }
   
@@ -16,15 +16,15 @@
   }
   
   &__main-right {
-    @include breakpoint(max-width bp(sm)) {
-      padding: 10px 10px;
+    @include breakpoint(max-width bp(md)) {
+      padding: 10px 0;
     }
   }
   
   &__navigation {
     @extend .bg-red;
     
-    @include breakpoint(max-width bp(sm)) {
+    @include breakpoint(max-width bp(md)) {
       display:none;
     }
   }
