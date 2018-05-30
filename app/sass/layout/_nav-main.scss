@@ -3,24 +3,6 @@
   width:100%;
   margin:0;
   padding:0;
-  
-  @include breakpoint(max-width bp(md)) {
-    display: block;
-    padding: 0;
-    width: 100%;
-    float: none;
-    height: auto;
-    line-height: initial;
-    margin: 0;
-    position:absolute;
-    top:100%;
-  }
-  
-  &.toggled-on {
-    > ul.mmm {
-      display:block;
-    }
-  }
 
   ul.mmm {
     display: inline-block;
@@ -31,35 +13,11 @@
     list-style-type: none;
     
     @include breakpoint(max-width bp(md)) {
-      display:none;
       color: #fff;
-      position: absolute;
-      padding: 0 20px;
+      position: static;
+      padding: 10px 0;
       width:100%;
       z-index:9;
-      background: #212c3f;
-      background: -webkit-gradient(linear, left top, left bottom, from(#212c3f), to(#212c3f));
-      background: -moz-linear-gradient(top, #212c3f, #212c3f);
-      background: -ms-linear-gradient(top, #212c3f, #212c3f);
-      background: -o-linear-gradient(top, #212c3f, #212c3f);
-      background: linear-gradient(to bottom, #212c3f, #212c3f);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#212c3f', endColorstr='#212c3f');
-      
-      .mmm__item {
-        display:block;
-        margin:0;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: rgba(255, 255, 255, 0.1);
-        
-        .mmm__nav-link {
-          height: auto;
-          line-height: 50px;
-          padding: 0 !important;
-          border: none;
-          color: #fff;
-        }
-      }
     }
     
     .mmm__item {
@@ -67,9 +25,100 @@
       float:left;
       margin: 0;
       
+      & a.mmm__nav-link:hover, 
+      &--current a.mmm__nav-link {
+        background: #D91E18;
+        
+        @include breakpoint(max-width bp(md)) {
+          background:#f3f4f8;
+        }
+      }
+      
       @include breakpoint(max-width bp(md)) {
         position:relative;
         display:block;
+        float:none;
+      }
+      
+      &--has-children {
+        position:relative;
+        
+        @include breakpoint(max-width bp(ml)) {
+          padding-right: 38px;
+        }
+        
+        @include breakpoint(max-width bp(md)) {
+          padding:0;
+        }
+        
+        .mmm__nav-link {
+          @include breakpoint(max-width bp(ml)) {
+            padding-right:0!important;
+          }
+          
+          &:after {
+            font-size: $font-size-text-medium!important;
+            margin-left:5px;
+            vertical-align: middle;
+            @include fa-icon;
+            @extend .fa-angle-down:before;
+            display:none;
+            
+            @include breakpoint(min-width bp(lg)) {
+              display:inline-block;
+            }
+          }
+        }
+        
+        &:hover {
+          .mmm__submenu {
+            top:100%;
+            visibility: visible;
+            opacity: 1;
+            z-index: 1000;
+          }
+        }
+        
+        
+        .mmm__submenu {
+          min-width:660px;
+          
+          @include breakpoint(max-width bp(ml)) {
+            min-width:630px;
+          }
+        }
+        
+        .js-cmm-dropdown-toggle {
+          display:none;
+          width: 38px;
+          height: 38px;
+          background-color: transparent;
+          font-size: 18px;
+          color:#ffffff;
+          line-height: 1;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 0;
+          right: 0;
+          border: 0;
+          text-shadow: none;
+          outline:0;
+          
+          @include breakpoint(max-width bp(ml)) {
+            display: inline-block;
+          }
+          
+          @include breakpoint(max-width bp(md)) {
+            color:#444;
+          }
+          
+          &.toggled-on {
+            i {
+              @extend .fa-angle-down;
+            }
+          }
+        }
       }
       
       .mmm__nav-link {
@@ -81,68 +130,11 @@
         display:block;
         margin: 0;
         padding: 0 20px;
-      }
-      
-      & a.mmm__nav-link:hover, &--current a.mmm__nav-link {
-        @extend .bg-red-thunderbird;
-        
-      }
-      
-      .mmm-dropdown-toggle {
-        display:none;
-        background-color: transparent;
-        
-        font-size: 20px;
-        color:#fff;
-        line-height: 40px;
-        margin: 0;
-        padding: 0 12px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: 0;
-        text-shadow: none;
-        outline:0;
         
         @include breakpoint(max-width bp(md)) {
-          display:block;
-        }
-        
-        &.clever-toggled-on {
-          i {
-            @extend .fa-angle-down;
-          }
-        }
-      }
-      
-      &--has-children {
-        .mmm__nav-link {
-          
-          &:after {
-            font-size: $font-size-text-medium!important;
-            margin-left:5px;
-            vertical-align: middle;
-            @include fa-icon;
-            @extend .fa-angle-down:before;
-            
-            @include breakpoint(max-width bp(md)) {
-              content:"";
-              display:none;
-            }
-          }
-        }
-        &:hover {
-          .mmm__submenu {
-            top:100%;
-            visibility: visible;
-            opacity: 1;
-            z-index: 1000;
-          }
-        }
-      }
-      &--has-children {
-        .mmm__submenu {
-          min-width:660px;
+          font-size:13px;
+          color: $text-color;
+          border: none;
         }
       }
     }
@@ -170,7 +162,7 @@
         padding: 0 !important;
         background: none;
         
-        &.clever-toggled-on {
+        &.toggled-on {
           display:block;
         }
       }
@@ -183,22 +175,19 @@
         @extend %font-size-xs;
         @extend %font-weight-light;
         color: $text-color;
-        padding: 20px 20px 20px 20px;
+        padding: 20px 20px;
         border-width: 1px 1px 1px 1px;
         border-style: solid;
         border-color: #e0e4f6;
         border-radius: 0 0 4px 4px;
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
         background: #fff;
-        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
-        background: -moz-linear-gradient(top, #fff, #fff);
-        background: -ms-linear-gradient(top, #fff, #fff);
-        background: -o-linear-gradient(top, #fff, #fff);
-        background: linear-gradient(to bottom, #fff, #fff);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#fff');
         
         @include breakpoint(max-width bp(md)) {
-          border-radius: 4px 4px 4px 4px;
+          border:0;
+          border-radius: 0;
+          box-shadow:none;
+          padding: 10px 20px;
         }
         
         ul {
@@ -215,49 +204,6 @@
           }
         }
       }
-    }
-  }
-}
-
-.mmm-toggle-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  float: none;
-  width:45px;
-  height: 38px;
-  display:none;
-  
-  @include breakpoint(max-width bp(md)) {
-    display:block;
-  }
-  
-  .mmm-toggle {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    display: block;
-    background-color: transparent;
-    color: $text-color;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: all 0.2s;
-    line-height: 38px;
-    padding: 0 15px 0 15px;
-    outline:0;
-
-    > .mmm-toggle__icon {
-      font-size:20px;
-    }
-    .mmm-toggle__icon--close {
-      display:none;
-    }
-    &.toggled-on .mmm-toggle__icon--open {
-      display:none;
-    }
-    &.toggled-on .mmm-toggle__icon--close {
-      display:inline-block;
     }
   }
 }

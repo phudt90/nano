@@ -1,7 +1,7 @@
 .cart {
   float:right;
   
-  @include breakpoint(max-width bp(xs)) {
+  @include breakpoint(max-width bp(sm)) {
     float:none;
     width:100%;
   }
@@ -59,7 +59,7 @@
       @extend %font-weight-medium;
       @include border-radius(3px);
       
-      @include breakpoint(max-width bp(xs)) {
+      @include breakpoint(max-width bp(sm)) {
         position:absolute;
         top:3px;
         right:3px;

@@ -29,17 +29,18 @@
     </div>
   </div>
 
-  <div class="site-header__navigation">
+  <div class="site-header__navigation navbar-offcanvas navbar-offcanvas-touch" id="js-mainnav-offcanvas">
     <div class="container">
-      <div class="slds-grid slds-gutters">
-        <div class="slds-col slds-size_3-of-12">
+      <div class="slds-grid slds-wrap slds-gutters">
+        <div class="slds-col slds-size_12-of-12 slds-large-size_3-of-12">
           <?php include 'nav_categories.php';?>
         </div>
-        <div class="slds-col slds-size_9-of-12">
+        <div class="slds-col slds-size_12-of-12 slds-large-size_9-of-12">
           <?php include 'nav_main.php' ?>
         </div>
       </div>
     </div>
   </div>
+  
 </div>
 </header>

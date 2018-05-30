@@ -1,6 +1,8 @@
-<div id="main-nav-toggle" class="mmm-rw-top-menu-toggle mmm-toggle-wrapper">
-  <button type="button" class="mmm-toggle" aria-controls="" aria-pressed="false">
-    <i class="fa fa-lg fa-bars mmm-toggle__icon mmm-toggle__icon--open"></i>
-    <i class="fa fa-lg fa-times mmm-toggle__icon mmm-toggle__icon--close"></i>
+<div class="megamenu-toggle">
+  <button type="button" class="megamenu-toggle__button navbar-toggle offcanvas-toggle" 
+    data-toggle="offcanvas"
+    data-target="#js-mainnav-offcanvas">
+    <i class="fa fa-lg fa-bars megamenu-toggle__icon megamenu-toggle__icon--open"></i>
+    <i class="fa fa-lg fa-times megamenu-toggle__icon megamenu-toggle__icon--close"></i>
   </button>
 </div>

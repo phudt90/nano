@@ -1,21 +1,15 @@
-<nav id="nav-categories" class="nav-categories">
+<nav id="js-nav-categories" class="nav-categories js-cmm-container" role="navigation">
   <a href="javascript:" class="nav-categories__toggle">
     <i class="nav-categories__toggle__icon"></i>
     <span class="nav-categories__toggle__text nav-categories__toggle__text--long">DANH MỤC SẢN PHẨM</span>
   </a>
-  <button class="nav-categories__toggle navbar-toggler offcanvas-toggle btn" type="button" 
-    data-toggle="offcanvas"
-    data-target="#js-nav-categories-offcanvas">
-    <i class="nav-categories__toggle__icon"></i>
-    <span class="nav-categories__toggle__text nav-categories__toggle__text--short">DANH MỤC</span>
-  </button>
-  <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-nav-categories-offcanvas">
-  <ul class="cmm">
-    <li class="cmm__item cmm__item--has-children">
+  
+  <ul class="cmm js-cmm">
+    <li class="cmm__item cmm-item-has-children">
       <a href="javascript:;" class="cmm__nav-link">
-        <i class="fa fa-gears"></i> <span>Ắc quy ô tô</span>
+        <span>Ắc quy ô tô</span>
       </a>
-      <div class="cmm__submenu">
+      <div class="cmm__submenu js-cmm-submenu">
         <div class="cmm__submenu-wrapper">
           <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
@@ -98,24 +92,23 @@
     </li>
     <li class="cmm__item">
       <a href="javascript:;" class="cmm__nav-link">
-        <i class="fa fa-gears"></i> <span>Ắc quy ô tô truyền thống</span>
+        <span>Ắc quy ô tô truyền thống</span>
       </a>
     </li>
     <li class="cmm__item">
       <a href="javascript:;" class="cmm__nav-link">
-        <i class="fa fa-gears"></i> <span>Ắc quy xe phân khối lớn</span>
+        <span>Ắc quy xe phân khối lớn</span>
       </a>
     </li>
     <li class="cmm__item">
       <a href="javascript:;" class="cmm__nav-link">
-        <i class="fa fa-gears"></i> <span>Ắc quy năng lượng</span>
+        <span>Ắc quy năng lượng</span>
       </a>
     </li>
     <li class="cmm__item">
       <a href="javascript:;" class="cmm__nav-link">
-        <i class="fa fa-gears"></i> <span>Ắc quy xe điện</span>
+        <span>Ắc quy xe điện</span>
       </a>
     </li>
   </ul>
-  </div>
 </nav>

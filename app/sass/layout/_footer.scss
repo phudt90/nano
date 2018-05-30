@@ -1,0 +1,17 @@
+.footer-info {
+  padding: 20px 0;
+  background:transparent;
+  
+  &__heading {
+    margin: 0 0 5px;
+  }
+}
+
+.copyright {
+  background: #ffffff;
+  padding: 20px 0;
+  &__text {
+    @extend %font-size-xxs;
+    @extend %font-weight-light;  
+  }
+}

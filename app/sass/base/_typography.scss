@@ -6,7 +6,7 @@ html {
 body {
   @extend %font-size-sm;
   @extend %font-weight-light;
-  background: #fafaf9;
+  background: #f4f4f4;
   color: #3e3e3c;
   -webkit-tap-highlight-color: transparent;
 }
@@ -85,5 +85,27 @@ button, input, optgroup, select, textarea {
 
   &:hover {
     cursor: not-allowed !important;    
+  }
+}
+
+.page-title-wrapper {
+  margin-bottom:30px;
+  
+  .page-title {
+    @extend %font-size-xl;
+    @extend %font-weight-medium;
+    text-transform: uppercase;
+    position: relative;
+    
+    &:before {
+      content: "";
+      width: 70px;
+      height: 3px;
+      display: inline-block;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      @extend .bg-red;
+    }
   }
 }

@@ -81,26 +81,20 @@ var Layout = function() {
 	};
 	
 	var handleZoomImages = function() {
-		$('.product .zoom img').each(function() {
-			$(this).elevateZoom({
-				zoomWindowWidth: 600,
-				zoomWindowHeight: 400,
-				borderSize: 1,
-				borderColour: '#ff3100',
+		$('.product .zoom').each(function() {
+			let self = $(this);
+			let thumbUrl = self.parent().data('zoom');
+			self.zoom({
+				url: thumbUrl,
 			});
 		});
 	};
-	
-	var handleChosen = function() {
-		$(".chosen-select").chosen();
-	}
 
 	return {
 		init : function() {
 			handleHeaderSearch();
 			handleFlexImages();
-			//handleZoomImages();
-			handleChosen();
+			handleZoomImages();
 		}
 	};
 }();

@@ -1,0 +1,64 @@
+.product {
+  @extend %box-shadow-inset;
+  background:#fff;
+  @include border-radius(4px);
+  margin-bottom:20px;
+  
+  &__inner {
+    
+    @include breakpoint(max-width bp(md)) {
+      display:block;
+    }
+  }
+  
+  &__media {
+    width: 100%;
+    min-height: 350px;
+    padding: 24px 24px 20px 20px;
+  }
+  
+  &__body {
+    width: 100%;
+    border-left: 1px solid #e0e4f6;
+    padding: 0 0;
+  }
+
+  &__section {
+    padding: 15px 20px;
+    
+    &:not(:first-child) {
+      border-top: 1px solid #e0e4f6;
+    }
+  }
+  
+  &__name {
+    @extend %font-size-lg;
+    @extend %font-weight-light;
+    line-height: 30px;
+    margin: 0 0 5px;
+  }
+  
+  &__terms {
+    @extend %font-size-xxs;
+    @extend %font-weight-light;
+    
+    > div {
+      display:inline-block;
+      margin-right:12px;
+      
+      span {
+        color :#868ca7;
+      }
+    }
+  }
+  
+  &__info-text {
+    margin-top: 10px;
+    strong {
+      font-weight: 500;
+    }
+    p {
+      margin: 0 0 5px;
+    }
+  }
+}

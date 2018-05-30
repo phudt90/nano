@@ -1,0 +1,40 @@
+.widget-sellers {
+  background:#fff;
+  padding: 30px 0;
+  
+  &__item {
+    position:relative;
+    
+    @include breakpoint(max-width bp(md)) {
+      margin-bottom:20px;
+    }
+  }
+  
+  &__name, &__subname {
+    @extend %font-size-sm;
+    @extend %font-weight-medium;
+    text-transform: uppercase;
+  }
+  &__name {
+    margin: 0 0 5px;
+  }
+  &__subname {
+    margin: 0 0 8px;
+  }
+  
+  &__info {
+    @extend %font-size-xs;
+    @extend %font-weight-light;
+    display:table;
+    margin-bottom:5px;
+    
+    i {
+      padding-right: 5px;
+    }
+    i, span {
+      display:table-cell;
+      vertical-align:top;
+      line-height: 1.4;
+    }
+  }
+}
