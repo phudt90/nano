@@ -45,7 +45,8 @@ $breakpoints: (
   'x-small': $mq-x-small,
   'small': $mq-small,
   'medium': $mq-medium,
-  'large': $mq-large
+  'large': $mq-large,
+  'x-large': $mq-x-large
 ) !default;
 
 /// Grid Column Support

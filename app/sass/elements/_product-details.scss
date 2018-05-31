@@ -4,17 +4,10 @@
   @include border-radius(4px);
   margin-bottom:20px;
   
-  &__inner {
-    
-    @include breakpoint(max-width bp(md)) {
-      display:block;
-    }
-  }
-  
   &__media {
     width: 100%;
     min-height: 350px;
-    padding: 24px 24px 20px 20px;
+    padding: 24px 20px 20px 20px;
   }
   
   &__body {
@@ -22,24 +15,37 @@
     border-left: 1px solid #e0e4f6;
     padding: 0 0;
   }
-
-  &__section {
+  
+  &__main-info {
     padding: 15px 20px;
+    border-bottom: 1px solid #e0e4f6;
+  }
+
+  &__details {
+    padding: 0 20px;
+  }
+  
+  &__section {
+    padding: 15px 0;
     
     &:not(:first-child) {
       border-top: 1px solid #e0e4f6;
+    }
+    
+    &__heading {
+      margin: 0 0 10px;
     }
   }
   
   &__name {
     @extend %font-size-lg;
-    @extend %font-weight-light;
+    @extend %font-weight-regular;
     line-height: 30px;
     margin: 0 0 5px;
   }
   
   &__terms {
-    @extend %font-size-xxs;
+    @extend %font-size-sm;
     @extend %font-weight-light;
     
     > div {
@@ -53,12 +59,90 @@
   }
   
   &__info-text {
-    margin-top: 10px;
+    @extend %font-size-xs;
+    
     strong {
       font-weight: 500;
     }
     p {
       margin: 0 0 5px;
     }
+  }
+  
+  &__price-wrap {
+    
+    .price-item {
+      position: relative;
+      
+      &--final .price-value {
+        @extend %font-size-lg;
+        @extend %font-weight-medium;
+        @extend .font-red;
+      }
+      
+      &--old .price-value, .price-label {
+        color: #9b9b9b;
+        @extend %font-size-xs;
+        @extend %font-weight-light;
+      }
+    }
+  }
+  
+  &__cart {
+    
+    .btn-cart {
+      margin-top: 8px;
+      padding: 7px 30px;
+      box-shadow: none;
+      
+      &:before {
+        content: "";
+        display:inline-block;
+        width: 20px;
+        height: 16px;
+        vertical-align:middle;
+        margin-right: 6px;
+        background-image: url(../img/icons/cart1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 0;
+      }
+      
+      > span {
+        vertical-align:middle;
+      }
+    }
+  }
+  
+  &__block {
+    border: 1px solid #ececec;
+    @include border-radius(4px);
+    margin: 15px 0 0;
+    padding: 10px 15px;
+    
+    .item {
+      display:block;
+      
+      &:not(:last-child) {
+        margin: 0 0 10px;
+      }
+      
+      .fa {
+        float: left;
+        font-size: 20px;
+        margin-top: 6px;
+        color: #868ca7;
+      }
+      p {
+        margin: 0;
+        padding-left: 28px;
+        @extend %font-size-xs;
+        @extend %font-weight-light;
+      }
+    }
+  }
+  
+  .dl-props {
+    margin: 0;
   }
 }

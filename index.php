@@ -8,7 +8,7 @@
   
   <div id="content" class="site-content">
     <main id="main" class="site-main">
-      <?php include 'partials/breadcrumb.php';?>
+      <div class=""></div>
     </main>
   </div>
 </div>

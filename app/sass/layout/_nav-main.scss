@@ -150,6 +150,17 @@
       opacity: 0;
       transition: all 0.2s ease-in;
       
+      @include breakpoint(max-width bp(ml)) {
+        display:none;
+        
+        &.toggled-on {
+          display:block;
+          top:100%;
+          visibility: visible;
+          opacity:1;
+        }
+      }
+      
       @include breakpoint(max-width bp(md)) {
         width: auto !important;
         min-width:0!important;

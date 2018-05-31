@@ -43,7 +43,7 @@
     height: 35px;
     display:none;
     
-    @include breakpoint(max-width bp(ml)) {
+    @include breakpoint(max-width bp(md)) {
       display:block;
     }
     

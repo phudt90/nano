@@ -142,7 +142,7 @@
       outline:0;
       z-index:12;
       
-      @include breakpoint(max-width bp(md)) {
+      @include breakpoint(max-width bp(ml)) {
         display:block;
       }
       
@@ -189,6 +189,10 @@
       -webkit-box-shadow: -2px 0 8px 0 rgba(0,0,0,.06);
       box-shadow: -2px 0 8px 0 rgba(0,0,0,.06);
       z-index: 8;
+      
+      @include breakpoint(max-width bp(ml)) {
+        width: 715px;
+      }
       
       @include breakpoint(max-width bp(md)) {
         position:static;

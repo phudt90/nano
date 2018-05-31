@@ -1,7 +1,7 @@
 <footer id="footer">
   <div class="widget-sellers">
     <div class="container">
-      <div class="slds-grid slds-wrap slds-gutters_large">
+      <div class="slds-grid slds-wrap slds-gutters">
         <div class="slds-col slds-size_12-of-12 slds-large-size_4-of-12">
           <div class="widget-sellers__item">
             <h4 class="widget-sellers__name">Nhà phân phối GIA LAI - KONTUM</h4>
@@ -57,21 +57,14 @@
   
   <div class="footer-info">
     <div class="container">
-      <div class="slds-grid slds-wrap slds-gutters_large">
-        <div class="slds-col slds-size_12-of-12 slds-large-size_6-of-12">
-          <div class="footer-info__inner">
-            <h4 class="footer-info__heading">Công ty TNHH Xuất Nhập Khẩu Nano</h4>
-            <div><span class="sbold">Hotline:</span> <a href="tel:0903377985">0903 377 985</a></div>
-            <div><span class="sbold">Địa chỉ:</span>590 Kinh Dương Vương, Phường An Lạc, Quận Bình Tân, TP. Hồ Chí Minh</div>
-            <div><span class="sbold">MST:</span> 0312 306 226</div>
-            <div><span class="sbold">Tài Khoản:</span> 1401 0001 316 728 - Ngân hàng BIDV - Chi nhánh Sài Gòn</div>
-            <div><span class="sbold">Email:</span> acquynano247@gmail.com</div>
-            <div><span class="sbold">Website:</span> <a href="https://acquynano.com">acquynano.com</a></div>
-          </div>
-        </div>
-        <div class="slds-col slds-size_12-of-12 slds-large-size_6-of-12">
-          
-        </div>
+      <div class="footer-info__inner">
+        <h4 class="footer-info__heading">Công ty TNHH Xuất Nhập Khẩu Nano</h4>
+        <div><span class="sbold">Hotline:</span> <a href="tel:0903377985">0903 377 985</a></div>
+        <div><span class="sbold">Địa chỉ:</span>590 Kinh Dương Vương, Phường An Lạc, Quận Bình Tân, TP. Hồ Chí Minh</div>
+        <div><span class="sbold">MST:</span> 0312 306 226</div>
+        <div><span class="sbold">Tài Khoản:</span> 1401 0001 316 728 - Ngân hàng BIDV - Chi nhánh Sài Gòn</div>
+        <div><span class="sbold">Email:</span> acquynano247@gmail.com</div>
+        <div><span class="sbold">Website:</span> <a href="https://acquynano.com">acquynano.com</a></div>
       </div>
     </div>
   </div>

@@ -20,7 +20,7 @@
         <div class="list-products list-products-grid">
           <div class="slds-grid slds-wrap slds-gutters">
             <?php foreach($products as $product) { ?>
-            <div class="list-products__item slds-col slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_3-of-12">
+            <div class="list-products__item slds-col slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12 slds-x-large-size_3-of-12">
               <div class="list-products__item-info">
                 <div class="list-products__item-inner">
                   <div class="box-image">
