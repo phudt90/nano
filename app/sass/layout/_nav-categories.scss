@@ -75,13 +75,16 @@
     background: #ffffff;
     width:100%;
     margin: 0;
-    padding:0;
+    padding: 0;
     position: absolute;
     top: 37px;
     z-index:11;
     border-radius: 0 0 4px 4px;
-    -webkit-box-shadow: 0 4px 24px 0 rgba(0,0,0,.36);
-    box-shadow: 0 4px 24px 0 rgba(0,0,0,.36);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd #ddd #ddd #e1e1e1;
+    -webkit-box-shadow: -2px 0 8px 0 rgba(0,0,0,0.06);
+    box-shadow: -2px 0 8px 0 rgba(0,0,0,0.06);
 
     @include breakpoint(max-width bp(md)) {
       position: relative;
@@ -107,7 +110,7 @@
         @include fa-icon;
         @extend .fa-angle-right:before;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 34px;
         display:none;
         
         @include breakpoint(min-width bp(lg)) {
@@ -127,7 +130,7 @@
     .js-cmm-dropdown-toggle {
       display:none;
       width: 34px;
-      height: 34px;
+      height: 38px;
       background-color: transparent;
       font-size: 18px;
       color:#444;
@@ -159,8 +162,8 @@
       @extend %font-size-xs;
       @extend %font-weight-light;
       color: $text-color;
-      height: 34px;
-      line-height: 34px;
+      height: 38px;
+      line-height: 38px;
       padding: 0 20px;
       transition: none!important;
       
@@ -236,4 +239,10 @@
       }
     }
   }
+}
+.page-home .nav-categories .cmm {
+  display:block;
+  top: 100%;
+  margin-top: 10px;
+  border-radius: 4px 0 0 4px;
 }

@@ -1,0 +1,49 @@
+.banner-box .inner-box a {
+  display:block;
+  position:relative;
+  overflow:hidden;
+  border-radius:4px;
+  border: 1px solid #ebebeb;
+}
+
+.banner-box .inner-box a:before {
+  background-color:rgba(255, 255, 255, 0.2);
+  content:"";
+  height:200%;
+  left:-280px;
+  position:absolute;
+  top:-50%;
+  -webkit-transform:rotate(35deg);
+  transform:rotate(35deg);
+  -webkit-transition:all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition:all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+  width:80px;
+  z-index:0;
+}
+
+.banner-box .inner-box a:hover:before {
+  left:180%;
+  -webkit-transition:all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition:all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.banner-box .inner-box a:after {
+  background-color:rgba(255, 255, 255, 0.2);
+  content:"";
+  height:200%;
+  left:180%;
+  position:absolute;
+  top:-50%;
+  -webkit-transform:rotate(35deg);
+  transform:rotate(35deg);
+  -webkit-transition:all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition:all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+  width:80px;
+  z-index:0;
+}
+
+.banner-box .inner-box a:hover:after {
+  left:-280px;
+  -webkit-transition:all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition:all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+}

@@ -145,4 +145,47 @@
   .dl-props {
     margin: 0;
   }
+  
+  .flexslider {
+    position: relative;
+    
+    .flex-viewport {
+      .slides {
+        li {
+          a {
+            display:block;
+            margin-left: 60px;
+          }
+        }
+      }
+    }
+    
+    .flex-control-thumbs {
+      position:absolute;
+      top:0;
+      bottom: auto;
+      display:inline-block;
+      background: #fff;
+      margin:0;
+      width: 50px;
+      
+      li {
+        display: block;
+        float:none;
+        margin-bottom:15px;
+        width:100%;
+        
+        img {
+          width:50px;
+          height:50px;
+          border: 1px solid #e5e5e5;
+          border-radius: 3px;
+          
+          &:hover, &.flex-active {
+            border: 1px solid #ff3100;
+          }
+        }
+      }
+    }
+  }
 }

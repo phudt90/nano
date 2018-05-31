@@ -76,7 +76,15 @@ var Layout = function() {
 	var handleFlexImages = function() {
 		$('.product .flexslider').flexslider({
 			animation : "slide",
-			controlNav : "thumbnails"
+			controlNav : "thumbnails",
+			directionNav: false
+		});
+	};
+	
+	var handleHomeSlider = function() {
+		$('#homeslider .flexslider').flexslider({
+			animation : "slide",
+			directionNav: true
 		});
 	};
 	
@@ -95,6 +103,7 @@ var Layout = function() {
 			handleHeaderSearch();
 			handleFlexImages();
 			handleZoomImages();
+			handleHomeSlider();
 		}
 	};
 }();

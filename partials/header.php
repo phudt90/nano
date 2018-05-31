@@ -31,7 +31,7 @@
 
   <div class="site-header__navigation navbar-offcanvas navbar-offcanvas-touch" id="js-mainnav-offcanvas">
     <div class="container">
-      <div class="slds-grid slds-wrap slds-gutters">
+      <div class="slds-grid slds-wrap">
         <div class="slds-col slds-size_12-of-12 slds-large-size_3-of-12">
           <?php include 'nav_categories.php';?>
         </div>
