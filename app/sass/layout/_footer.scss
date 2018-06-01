@@ -1,17 +1,21 @@
-.footer-info {
-  padding: 20px 0;
-  background:transparent;
+#footer {
+  border-top: 1px solid #e5e5e5;
   
-  &__heading {
-    margin: 0 0 5px;
+  .footer-info {
+    padding: 20px 0;
+    background:transparent;
+    
+    &__heading {
+      margin: 0 0 5px;
+    }
   }
-}
-
-.copyright {
-  background: #ffffff;
-  padding: 20px 0;
-  &__text {
-    @extend %font-size-xxs;
-    @extend %font-weight-light;  
+  
+  .copyright {
+    background: #ffffff;
+    padding: 20px 0;
+    &__text {
+      @extend %font-size-xxs;
+      @extend %font-weight-light;  
+    }
   }
 }

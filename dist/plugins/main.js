@@ -82,7 +82,7 @@ var Layout = function() {
 	};
 	
 	var handleHomeSlider = function() {
-		$('#homeslider .flexslider').flexslider({
+		$('.widget-homeslides .flexslider').flexslider({
 			animation : "slide",
 			directionNav: true
 		});
@@ -97,6 +97,19 @@ var Layout = function() {
 			});
 		});
 	};
+	
+	var handleTouchSpin = function() {
+		$('.touchspin_cart').each(function() {
+			$(this).TouchSpin({
+	      min: 1,
+	      max: 100,
+	      step: 1,
+	      decimals: 0,
+	      buttondown_class: 'btn btn-default',
+	      buttonup_class: 'btn btn-default',
+			});
+		});
+	};
 
 	return {
 		init : function() {
@@ -104,6 +117,7 @@ var Layout = function() {
 			handleFlexImages();
 			handleZoomImages();
 			handleHomeSlider();
+			handleTouchSpin();
 		}
 	};
 }();

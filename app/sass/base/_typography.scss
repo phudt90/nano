@@ -63,13 +63,31 @@ button, input, optgroup, select, textarea {
   @extend %font-weight-regular;
 }
 
-%tiny-title {
-  @extend %font-size-xs;
+p {
+  margin: 0 0 15px;
+}
+
+hr {
+  border-color:#e5e5e5;
 }
 
 /* Unstyled List */
 .list-unstyled li > .list-unstyled {
   margin-left: 25px;
+}
+
+ul.list-checked {
+  margin: 0 0 15px;
+  padding:0;
+  
+  li {
+    background: transparent url(../img/icons/i_hotlinevf.png) no-repeat left top 6px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 4px 0 4px 25px;
+  }
 }
 
 /* Disabled Navigation Link */
@@ -130,5 +148,19 @@ button, input, optgroup, select, textarea {
       left: 0;
       @extend .bg-red;
     }
+  }
+}
+
+.layout-bg-white .site-main{
+  background: #ffffff;
+}
+
+.frame {
+  @extend %font-size-ml;
+  @extend %font-weight-light;
+  
+  .element-header {
+    font-size: 22px;
+    font-weight: 300;
   }
 }

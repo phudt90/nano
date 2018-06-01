@@ -1,0 +1,32 @@
+.blog-list {
+  &__article{
+    position:relative;
+    display:block;
+    margin: 0 0 30px;
+  }
+  
+  &__img-wrap{
+    position:relative;
+    margin-bottom: 5px;
+  }
+  
+  &__content-post{}
+  
+  &__title-post{
+    @extend %font-size-lg;
+    @extend %font-weight-medium;
+  }
+  
+  &__meta-post{
+    margin-top: 5px;
+    @extend %font-size-sm;
+    @extend %font-weight-medium;
+    color: #9693a2;
+  }
+  
+  &__entry-post{
+    @extend %font-size-md;
+    @extend %font-weight-light;
+    padding-top: 5px;
+  }
+}

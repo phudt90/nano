@@ -1,0 +1,30 @@
+.checkout {
+  &__order-info {
+    
+  }
+  &__order-products {
+    table {
+      th {
+        white-space:nowrap;
+        font-weight:400;
+      }
+      td {
+        vertical-align:middle;
+      }
+      td.name {
+        padding: 6px 8px;
+      }
+      td.qty {
+        text-align:right;
+      }
+    }
+  }
+  .btn-checkout {
+    @extend %font-size-xs;
+    @extend %font-weight-bold;
+    text-transform:uppercase;
+    @include border-radius(3px);
+    padding: 10px 15px;
+    margin: 20px 0 10px;
+  }
+}

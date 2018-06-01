@@ -73,6 +73,7 @@
     
     .price-item {
       position: relative;
+      margin:0;
       
       &--final .price-value {
         @extend %font-size-lg;

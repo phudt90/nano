@@ -1,0 +1,20 @@
+.widget-categories {
+  
+  ul {
+    li {
+      > a {
+        @extend %font-size-md;
+        @extend %font-weight-regular;
+        line-height: 24px;
+        display:block;
+        padding: 4px 0;
+        
+        &:before {
+          @include fa-icon;
+          @extend .fa-angle-right:before;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
