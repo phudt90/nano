@@ -72,11 +72,11 @@
                 <div class="portlet">
                   <div class="portlet-body">
                     <div class="checkout__order-products">
-                      <table>
+                      <table class="slds-table slds-no-row-hover">
                         <thead>
                           <tr>
                             <th colspan="2">Sản phẩm</th>
-                            <th>Số lượng</th>
+                            <th align="right">Số lượng</th>
                           </tr>
                         </thead>
                         <tbody>

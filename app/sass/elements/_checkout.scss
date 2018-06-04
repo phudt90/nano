@@ -6,19 +6,25 @@
     table {
       th {
         white-space:nowrap;
-        font-weight:400;
+        @extend %font-size-sm;
+        @extend %font-weight-regular;
       }
       td {
+        @extend %font-size-xs;
         vertical-align:middle;
+        white-space: normal;
       }
-      td.name {
-        padding: 6px 8px;
+      td.thumb {
+        img {
+          max-width: 50px;
+        }
       }
       td.qty {
         text-align:right;
       }
     }
   }
+  
   .btn-checkout {
     @extend %font-size-xs;
     @extend %font-weight-bold;
