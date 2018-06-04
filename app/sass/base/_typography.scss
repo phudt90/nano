@@ -160,7 +160,53 @@ ul.list-checked {
   @extend %font-weight-light;
   
   .element-header {
-    font-size: 22px;
-    font-weight: 300;
+    @extend %font-size-lg;
+    @extend %font-weight-medium;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    &:before {
+      content: "";
+      width: 70px;
+      height: 3px;
+      display: inline-block;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      @extend .bg-red;
+    }
+  }
+  
+  &.frame-space-before-extra-small {
+    margin-top: 5px;
+  }
+  &.frame-space-after-extra-small {
+    margin-bottom: 5px;
+  }
+  &.frame-space-before-small {
+    margin-top: 10px;
+  }
+  &.frame-space-after-small {
+    margin-bottom: 10px;
+  }
+  &.frame-space-before-medium {
+    margin-top: 20px;
+  }
+  &.frame-space-after-medium {
+    margin-bottom: 20px;
+  }
+  &.frame-space-before-large {
+    margin-top: 40px;
+  }
+  &.frame-space-after-large {
+    margin-bottom: 40px;
+  }
+  &.frame-space-before-extra-large {
+    margin-top: 60px;
+  }
+  &.frame-space-after-extra-large {
+    margin-bottom: 60px;
   }
 }
