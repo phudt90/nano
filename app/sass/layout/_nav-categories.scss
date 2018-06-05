@@ -101,10 +101,13 @@
     
     &__item {
       display:block;
+      
+      @include breakpoint(max-width bp(md)) {
+        position:relative;
+      }
     }
     
     .cmm-item-has-children {
-    
       > a:after {
         float: right;
         @include fa-icon;
