@@ -190,5 +190,38 @@
         <span>Ắc quy xe điện</span>
       </a>
     </li>
+    <li class="cmm__item cmm-item-has-children">
+      <a href="javascript:;" class="cmm__nav-link">
+        <span>Thương hiệu ắc quy</span>
+      </a>
+      <div class="cmm__submenu js-cmm-submenu" style="display:block!important;">
+        <div class="cmm__submenu-wrapper">
+          <?php $brands = [
+            'DAEWOO' => 'DAEWOO', 
+            'YUASA' => 'YUASA', 
+            'TOPLITE' => 'TOPLITE', 
+            'VISION' => 'VISION', 
+            'KV' => 'K&V', 
+            'ENIMAC' => 'ENIMAC', 
+            'USBATTERY' => 'USBATTERY', 
+            'PINACO' => 'PINACO', 
+            'TROJAN' => 'TROJAN', 
+            'ROCKET' => 'TROJAN', 
+            'GLOBE' => 'GLOBE', 
+            'AMARON' => 'AMARON', 
+            'DONGNAI' => 'Đồng Nai'
+          ]; ?>
+          <ul class="ul-brands slds-grid slds-wrap slds-gutters slds-grid_vertical-align-center">
+            <?php foreach($brands as $brand => $title) { ?>
+            <li class="slds-col slds-size_6-of-12 slds-large-size_3-of-12">
+              <a href="javascript:;" class="ul-brands__link" style="background-image: url('dist/img/brands/<?php echo strtolower($brand)?>.png');" title="<?php echo $title ?>">
+                <span><?php echo $title ?></span>
+              </a>
+            </li>
+            <?php } ?>
+          </ul>
+        </div>
+      </div>
+    </li>
   </ul>
 </nav>
