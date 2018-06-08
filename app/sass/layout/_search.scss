@@ -66,4 +66,44 @@
       }
     }
   }
+  
+  .q-search {
+    &__inner {
+      margin: 0!important;
+    }
+    
+    .slds-form-element {
+      padding: 0!important;
+    }
+    &__element{
+      .form-control {
+        height: 40px!important;
+        border-radius:0;
+        border-right:0;
+      }
+    }
+    .select2-container .select2-selection--single {
+      font-size: 14px;
+      font-weight: 300;
+      color: #495057;
+      background-color: #fff;
+      height: 40px;
+      border: 1px solid #e5e5e5;
+      border-radius:0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      outline:0;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+      height: 40px;
+      padding: 6px 22px 6px 10px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+      top: 7px;
+    }
+  }
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  padding: 8px 6px;
+  border-color: #e5e5e5!important;
 }

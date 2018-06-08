@@ -83,5 +83,8 @@
 <script src="./dist/plugins/typeahead/jquery.typeahead.custom.min.js"></script>
 <script src="./dist/plugins/jquery.flexslider-min.js"></script>
 <script src="./dist/plugins/jquery.zoom.min.js"></script>
+<script src="./dist/plugins/select2/js/select2.min.js"></script>
+<script src="./dist/plugins/select2/js/i18n/vi.js"></script>
+<script src="./dist/plugins/jquery.zoom.min.js"></script>
 <script src="./dist/plugins/megamenu.js"></script>
 <script src="./dist/plugins/main.js"></script>

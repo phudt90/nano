@@ -40,6 +40,11 @@ var Layout = function() {
 	    debug: true
 		});
 	};
+	
+	var handleHeaderSearch2 = function() {
+		var defaultOptions = {language: 'vi'};
+		$('.q-search .form-control').select2(defaultOptions);
+	};
 
 	// Handles the go to top button at the footer
 	var handleGoTop = function() {
@@ -114,6 +119,7 @@ var Layout = function() {
 	return {
 		init : function() {
 			handleHeaderSearch();
+			handleHeaderSearch2();
 			handleFlexImages();
 			handleZoomImages();
 			handleHomeSlider();

@@ -7,6 +7,7 @@
 
 <link href="./dist/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+<link rel="stylesheet" href="./dist/plugins/select2/css/select2.min.css" media="all" />
 <link rel="stylesheet" href="./dist/css/main.css?<?php echo time() ?>" media="all" />
 
 </head>
