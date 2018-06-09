@@ -9,11 +9,11 @@
       <a href="javascript:;" class="cmm__nav-link">
         <span>Ắc quy ô tô</span>
       </a>
-      <div class="cmm__submenu js-cmm-submenu">
+      <div class="cmm__submenu cmm__submenu-layout--0 js-cmm-submenu">
         <div class="cmm__submenu-wrapper">
           <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-              <ul>
+              <ul class="cmm__horizontal">
                 <li><span class="sbold"> Xu Hướng &amp; Nổi Bật </span></li>
                 <li><a href="javascript:;">Smartphone dưới 3 triệu </a></li>
                 <li><a href="javascript:;">Điện thoại dưới 1 triệu </a></li>
@@ -40,7 +40,7 @@
               </ul>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-              <ul>
+              <ul class="cmm__horizontal">
                 <li><span class="sbold">Smartphone Chính Hãng </span></li>
                 <li><a href="javascript:;">Xiaomi</a></li>
                 <li><a href="javascript:;">Apple</a></li>
@@ -61,7 +61,7 @@
               </ul>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-              <ul>
+              <ul class="cmm__horizontal">
                 <li><a href="javascript:;">Máy tính bảng</a></li>
                 <li><a href="javascript:;">Máy đọc sách</a></li>
                 <li><a href="javascript:;">Điện thoại phổ thông</a></li>
@@ -94,11 +94,11 @@
       <a href="javascript:;" class="cmm__nav-link">
         <span>Ắc quy ô tô truyền thống</span>
       </a>
-      <div class="cmm__submenu js-cmm-submenu">
+      <div class="cmm__submenu cmm__submenu-layout--0 js-cmm-submenu">
         <div class="cmm__submenu-wrapper">
           <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-              <ul>
+              <ul class="cmm__horizontal">
                 <li><span class="sbold"> Xu Hướng &amp; Nổi Bật </span></li>
                 <li><a href="javascript:;">Smartphone dưới 3 triệu </a></li>
                 <li><a href="javascript:;">Điện thoại dưới 1 triệu </a></li>
@@ -125,7 +125,7 @@
               </ul>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-              <ul>
+              <ul class="cmm__horizontal">
                 <li><span class="sbold">Smartphone Chính Hãng </span></li>
                 <li><a href="javascript:;">Xiaomi</a></li>
                 <li><a href="javascript:;">Apple</a></li>
@@ -146,7 +146,7 @@
               </ul>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-              <ul>
+              <ul class="cmm__horizontal">
                 <li><a href="javascript:;">Máy tính bảng</a></li>
                 <li><a href="javascript:;">Máy đọc sách</a></li>
                 <li><a href="javascript:;">Điện thoại phổ thông</a></li>
@@ -194,7 +194,7 @@
       <a href="javascript:;" class="cmm__nav-link">
         <span>Thương hiệu ắc quy</span>
       </a>
-      <div class="cmm__submenu js-cmm-submenu" style="display:block!important;">
+      <div class="cmm__submenu cmm__submenu-layout--1 js-cmm-submenu">
         <div class="cmm__submenu-wrapper">
           <?php $brands = [
             'DAEWOO' => 'DAEWOO', 
@@ -211,10 +211,10 @@
             'AMARON' => 'AMARON', 
             'DONGNAI' => 'Đồng Nai'
           ]; ?>
-          <ul class="ul-brands slds-grid slds-wrap slds-gutters slds-grid_vertical-align-center">
+          <ul class="cmm__horizontal slds-grid slds-wrap slds-gutters slds-grid_vertical-align-center">
             <?php foreach($brands as $brand => $title) { ?>
-            <li class="slds-col slds-size_6-of-12 slds-large-size_3-of-12">
-              <a href="javascript:;" class="ul-brands__link" style="background-image: url('dist/img/brands/<?php echo strtolower($brand)?>.png');" title="<?php echo $title ?>">
+            <li class="cmm__horizontal__item slds-col slds-size_6-of-12 slds-large-size_3-of-12">
+              <a href="javascript:;" class="cmm__horizontal__link cmm__horizontal__link--image" style="background-image: url('dist/img/brands/<?php echo strtolower($brand)?>.png');" title="<?php echo $title ?>">
                 <span><?php echo $title ?></span>
               </a>
             </li>
