@@ -1,5 +1,5 @@
 <header id="header">
-<?php //include 'header_topbar.php';?>
+<?php include 'header_topbar.php';?>
 
 <div class="site-header">
   

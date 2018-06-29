@@ -162,6 +162,7 @@ ul.list-checked {
   .element-header {
     @extend %font-size-lg;
     @extend %font-weight-medium;
+    line-height: 1.5;
     text-transform: uppercase;
     position: relative;
     margin-top: 20px;
@@ -170,7 +171,7 @@ ul.list-checked {
     &:before {
       content: "";
       width: 70px;
-      height: 3px;
+      height: 2px;
       display: inline-block;
       position: absolute;
       bottom: -8px;

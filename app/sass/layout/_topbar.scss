@@ -1,0 +1,44 @@
+.site-topbar {
+  background:#f7f7f7;
+  
+  @include breakpoint(max-width bp(md)) {
+    display:none;
+  }
+  
+  &__inner {
+    padding: 8px 0;
+  }
+  
+  .list-links {
+    &__item {
+      float:left;
+      
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+      
+      a {
+        @extend %font-size-xs;
+        @extend %font-weight-light;
+        color: #333;
+        
+        i {
+          color: #adadad;
+        }
+      }
+    }
+  }
+  
+  .list-social {
+    float:right;
+    
+    li {
+      float: left;
+      color: #adadad;
+      
+      &:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+  }
+}

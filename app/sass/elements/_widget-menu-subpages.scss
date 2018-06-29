@@ -1,0 +1,52 @@
+.frame-type-menu_subpages {
+  &.frame-layout-1 {
+    .menu-subpages {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-right: -.5rem;
+      margin-left: -.5rem;
+      
+      > li {
+        width: 25%;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        
+        @include breakpoint(max-width bp(lg) - 1) {
+          width: 33.333333%;
+        }
+        
+        @include breakpoint(max-width bp(sm)) {
+          width: 50%;
+        }
+        
+        > a {
+          padding: 10px 20px;
+          margin: 0 0 10px;
+          background: #fff;
+          border: 1px solid #efefef;
+          @include border-radius(3px);
+          
+          &:hover, &:active {
+            @extend .border-red;
+          }
+        }
+      }
+    }
+  }
+  
+  .menu-subpages {
+    list-style:none;
+    margin:0;
+    padding:0;
+    > li {
+      display: block;
+      margin: 0 0 4px;
+      > a {
+        display: block;
+        @extend %font-size-sm;
+        @extend %font-weight-light;
+      }
+    }
+  }
+}

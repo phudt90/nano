@@ -1,36 +1,25 @@
 <div class="site-topbar">
   <div class="container">
     <div class="site-topbar__inner">
-      <div class="row">
-        <div class="col-8 col-sm-12">
+      <div class="slds-grid slds-wrap slds-gutters">
+        <div class="slds-col slds-size_12-of-12 slds-large-size_10-of-12">
           <ul class="list-links list-unstyled">
-            <li>
-              <span class="list-links__label">
-                <i class="fa fa-map-marker-alt"></i> Our Address
-              </span>
-              <span class="list-links__value">
-                <a href="http://maps.google.com" target=" _blank" rel="nofollow"> 15th Street, Miami, USA </a>
-              </span>
+            <li class="list-links__item">
+              <a href="javascript:;"><i class="fa fa-map-marker"></i> 590 Kinh Dương Vương, P.An Lạc, Q.Bình Tân, TP HCM</a>
             </li>
-            <li>
-              <span class="list-links__label">
-                <i class="fa fa-envelope"></i> Contact Us
-              </span>
-              <span class="list-links__value">
-                <a href="mailto:info@email.com"> Info@Email.com </a>
-              </span>
+            <li class="list-links__item">
+              <a href="mailto:acquynano247@gmail.com"><i class="fa fa-envelope"></i> acquynano247@gmail.com</a>
             </li>
-            <li>
-              <span class="list-links__labels">
-                <i class="fa fa-phone"></i> Phone
-              </span>
-              <span class="list-links__value">
-                <a href="tel:4785929899"> (478)-592-9899 </a>
-              </span>
+            <li class="list-links__item">
+              <a href="tel:0903377985"><i class="fa fa-phone"></i> 0903 377 985</a>
             </li>
           </ul>
         </div>
-        <div class="col-4 col-sm-12"></div>
+        <div class="slds-col slds-size_12-of-12 slds-large-size_2-of-12">
+          <ul class="list-social list-unstyled">
+            <li><a href="https://www.facebook.com/acquynano1/"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
