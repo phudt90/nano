@@ -1,0 +1,24 @@
+.w-services {
+
+  &__box {
+    position: relative;
+    margin-bottom: 35px;
+
+    .fa {
+      font-size: 54px;
+      color: #777;
+    }
+
+    h3 {
+      color: #414857;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    .block-text {
+      font-size: 15px;
+    }
+  }
+}
