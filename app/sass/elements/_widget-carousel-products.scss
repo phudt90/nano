@@ -1,0 +1,25 @@
+.w-carousel-products {
+  &.owl-theme {
+    .owl-nav {
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      width: 100%;
+      margin-top: -68px;
+
+      [class*=owl-] {
+        position: absolute;
+        font-size: 40px;
+        color: #414857;
+        background: transparent;
+      }
+
+      .owl-prev {
+        left: -40px;
+      }
+      .owl-next {
+        right: -40px;
+      }
+    }
+  }
+}

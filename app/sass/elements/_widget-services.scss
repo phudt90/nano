@@ -2,7 +2,41 @@
 
   &__box {
     position: relative;
+    margin-top: 20px;
     margin-bottom: 35px;
+
+    @include breakpoint(max-width bp(sm)) {
+      text-align: center;
+    }
+
+
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: -30px;
+      width: 61px;
+      height: 72px;
+      background-image: url(../img/icons/drop-icon-1.png);
+      background-repeat: no-repeat;
+
+      @include breakpoint(max-width bp(sm)) {
+        left: 50%;
+        margin-left: -25px;
+      }
+  }
+
+    &.drop-green:before {
+      background-image: url(../img/icons/drop-icon-2.png);
+    }
+
+    &.drop-pink:before {
+      background-image: url(../img/icons/drop-icon-3.png);
+    }
+
+    .inner-box {
+      position: relative;
+    }
 
     .fa {
       font-size: 54px;
@@ -12,9 +46,9 @@
     h3 {
       color: #414857;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 400;
       text-transform: capitalize;
-      margin-bottom: 10px;
+      margin: 10px 0;
     }
 
     .block-text {

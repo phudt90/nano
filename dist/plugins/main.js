@@ -116,6 +116,38 @@ var Layout = function() {
 		});
 	};
 
+	var handleOwlCarousel = function() {
+    $(".w-carousel-products").owlCarousel({
+      items: 4,
+      margin: 30,
+      loop: true,
+      nav: true,
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      navElement: 'div',
+      dots: true,
+      responsive : {
+        0: {
+          items: 1,
+          nav: false,
+        },
+        480: {
+          items: 1,
+          nav: false,
+        },
+        768: {
+          items: 2,
+          nav: true,
+        },
+        1024: {
+          items: 3
+        },
+        1200: {
+          items: 4
+        }
+      }
+    });
+	};
+
 	return {
 		init : function() {
 			handleHeaderSearch();
@@ -124,6 +156,7 @@ var Layout = function() {
 			handleZoomImages();
 			handleHomeSlider();
 			handleTouchSpin();
+			handleOwlCarousel();
 		}
 	};
 }();

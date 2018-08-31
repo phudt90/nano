@@ -1,0 +1,32 @@
+.w-clients {
+  border: 1px solid #f1f1f1;
+  border-bottom: 0;
+
+  &--3columns .w-clients__item:nth-child(3n+3) {
+    border-right: 0;
+  }
+
+  &--4columns .w-clients__item:nth-child(4n+4) {
+    border-right: 0;
+  }
+
+  &__item {
+    display: block;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    height: 150px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    > div {
+      max-width: 200px;
+    }
+  }
+}
